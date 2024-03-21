@@ -1,0 +1,79 @@
+body {
+    background: #292929;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.checkboxBlock {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(30px, auto));
+    grid-template-rows: repeat(4, minmax(30px, auto));
+    align-items: center;
+}
+#mainH {
+    color: white;
+    font-weight: bold;
+    grid-column: 1/-1;
+}
+.label {
+    color: hsl(208, 100%, 50%);
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+input[type=checkbox] {
+    width: 30px;
+    height: 30px;
+}
+#lengthInput {
+    background: #454545;
+    border-radius: 5px;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    width: 50px;
+    margin-left: 10px;
+    
+}
+.inputLabel {
+    display: flex;
+    align-items: center; 
+}
+#generateBtn {
+    width: 100%;
+    color: white;
+    background:  hsl(208, 100%, 50%);
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+#generateBtn:hover {
+    background:  hsl(208, 100%, 60%);
+}
+#generateBtn:active {
+    background:  hsl(208, 100%, 70%);
+}
+#result {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    word-break: break-all;
+}
+#alert {
+    font-size: 30px;
+    color: rgb(255, 74, 74);
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+<body>
+    <div class="mainContainer">
+    <h1 id="mainH">Password Generator</h1>
+    <div class="checkboxBlock">
+        <input id="lowercaseInput" type="checkbox"><label class="label" for="lowercaseInput">Lowercase</label>
+        <input id="uppercaseInput" type="checkbox"><label class="label" for="uppercaseInput">Uppercase</label>
+        <input id="numbersInput" type="checkbox"><label class="label" for="numbersInput">Numbers</label>
+        <input id="symbolsInput" type="checkbox"><label class="label" for="symbolsInput">Symbols</label>
+    </div>
+    <div class="inputLabel">
+        <label id="lengthLabel" class="label">Length: </label>
+        <input id="lengthInput" maxlength="2">
+    </div>
+
+    <button id="generateBtn">Generate</button>
+    
+</div>
+<div id="alert"></div>
+<div id="result"></div>
+    <script src="index.js"></script>
+</body>
+</html>
